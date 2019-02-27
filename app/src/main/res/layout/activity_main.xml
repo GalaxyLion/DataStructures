@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/array"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARRAY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/text_array"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/array"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/elem_array"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_array"/>
+
+            <Button
+                android:id="@+id/array_get_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Get"/>
+            <Button
+                android:id="@+id/array_find_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array"
+                app:layout_constraintStart_toEndOf="@id/array_get_btn"
+                android:text="Find"/>
+            <Button
+                android:id="@+id/array_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array"
+                app:layout_constraintStart_toEndOf="@id/array_find_btn"
+                android:text="Delete"/>
+            <Button
+                android:id="@+id/array_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array"
+                app:layout_constraintStart_toEndOf="@id/array_delete_btn"
+                android:text="Add"/>
+
+
+            <!-- End array -->
+
+
+            <TextView
+                android:id="@+id/array_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARRAY LIST"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/array_add_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/text_array_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/array_list"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/elem_array_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_array_list"/>
+
+            <Button
+                android:id="@+id/array_list_get_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array_list"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Get"/>
+            <Button
+                android:id="@+id/array_list_find_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array_list"
+                app:layout_constraintStart_toEndOf="@id/array_list_get_btn"
+                android:text="Find"/>
+            <Button
+                android:id="@+id/array_list_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array_list"
+                app:layout_constraintStart_toEndOf="@id/array_list_find_btn"
+                android:text="Delete"/>
+            <Button
+                android:id="@+id/array_list_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_array_list"
+                app:layout_constraintStart_toEndOf="@id/array_list_delete_btn"
+                android:text="Add"/>
+
+            <!-- End array list-->
+
+            <TextView
+                android:id="@+id/linked_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LINKED LIST"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/array_list_add_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/text_linked_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/linked_list"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/elem_linked_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_linked_list"/>
+
+            <Button
+                android:id="@+id/linked_list_get_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_linked_list"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Get"/>
+            <Button
+                android:id="@+id/linked_list_find_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_linked_list"
+                app:layout_constraintStart_toEndOf="@id/linked_list_get_btn"
+                android:text="Find"/>
+            <Button
+                android:id="@+id/linked_list_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_linked_list"
+                app:layout_constraintStart_toEndOf="@id/linked_list_find_btn"
+                android:text="Delete"/>
+            <Button
+                android:id="@+id/linked_list_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_linked_list"
+                app:layout_constraintStart_toEndOf="@id/linked_list_delete_btn"
+                android:text="Add"/>
+
+            <!-- End linked list -->
+
+            <TextView
+                android:id="@+id/stack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STACK"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linked_list_add_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/text_stack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/stack"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/elem_stack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_stack"/>
+
+            <Button
+                android:id="@+id/stack_get_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_stack"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Get"/>
+            <Button
+                android:id="@+id/stack_find_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_stack"
+                app:layout_constraintStart_toEndOf="@id/stack_get_btn"
+                android:text="Find"/>
+            <Button
+                android:id="@+id/stack_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_stack"
+                app:layout_constraintStart_toEndOf="@id/stack_find_btn"
+                android:text="Delete"/>
+            <Button
+                android:id="@+id/stack_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_stack"
+                app:layout_constraintStart_toEndOf="@id/stack_delete_btn"
+                android:text="Add"/>
+
+            <!-- End stack -->
+
+            <TextView
+                android:id="@+id/queue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUEUE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stack_add_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/text_queue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/queue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="6dp"
+                />
+
+            <TextView
+                android:id="@+id/elem_queue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_queue"/>
+
+            <Button
+                android:id="@+id/queue_get_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_queue"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="Get"/>
+            <Button
+                android:id="@+id/queue_find_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_queue"
+                app:layout_constraintStart_toEndOf="@id/queue_get_btn"
+                android:text="Find"/>
+            <Button
+                android:id="@+id/queue_delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_queue"
+                app:layout_constraintStart_toEndOf="@id/queue_find_btn"
+                android:text="Delete"/>
+            <Button
+                android:id="@+id/queue_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/elem_queue"
+                app:layout_constraintStart_toEndOf="@id/queue_delete_btn"
+                android:text="Add"/>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
