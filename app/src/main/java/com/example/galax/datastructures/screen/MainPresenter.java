@@ -25,7 +25,7 @@ public class MainPresenter implements MainContract.Presenter {
     private final int ADD_ELEM = 5;
     private final int FIND_ELEM = 5;
 
-    
+
 
     @Override
     public void start(MainContract.View view) {
@@ -91,6 +91,7 @@ public class MainPresenter implements MainContract.Presenter {
         subscriptions.add(view.getBtnArrayAction()
         .subscribe(
                 o->{
+                    
                     if(array != null && array.length > 0) {
                         view.setArrayElemText(String.valueOf(array[0]));
                     }else {
